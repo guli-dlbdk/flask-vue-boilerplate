@@ -1,8 +1,15 @@
 
 body {
 	font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 62.5%;
+    height: 100vh;
   
+}
+
+.main-container{
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
 }
 
 .sidebar {
@@ -23,12 +30,8 @@ body {
 @media (min-width: 960px) and (max-width: 961px){
 	.sidebar {
 		width: 450px;
-		height: 100vh;
-		display: flex;
-		flex-grow: 0;
-		position: relative;
 	}
-	.sidebar header {
+	header {
 		padding: 40px 40px 30px 40px;
 	}
 	.artwork-image{
@@ -53,10 +56,12 @@ body {
 }
 
 @media (max-height: 730px){
-	.sidebar h1 {
+	.sidebar{
+		height: 100vh;
+	}
+	.sidebar header h1 {
 		font-size: 25px;
 		line-height: 30px;
-		display: block;
 	}
 	.artwork-image{
 		display: none;
@@ -65,9 +70,16 @@ body {
 		display: none;
 	}
 }
+@media (max-height: 850px){
+	.sidebar header h1 {
+		font-size: 25px;
+		line-height: 30px;
+	}
+}
 
 .sidebar-content {
 	height: 100%;
+	width: initial;
 }
 
 header {
@@ -82,7 +94,7 @@ header {
 header .logo {
 	opacity: 0.7;
 	display: block;
-	margin-bottom: 30px;
+	margin-bottom: 31px;
 
 }
 
@@ -101,7 +113,7 @@ header .logo {
 .sidebar h1 {
 	font-family: inherit;
 	display: block;
-	font-size: 32px;
+	font-size: 35px;
     line-height: 38px;
 	font-weight: bold;
 	font-style: normal;
@@ -118,7 +130,8 @@ header .logo {
 
 .artwork-image {
 	background-image: url('/static/images/art.png');
-	height: 590.5px;
+	height: 557.5px;
+	max-height: 590.5px;
 	background-position: bottom center;
     background-size: cover;
 	
@@ -142,7 +155,7 @@ p {
 
 .content {
 	float: left;
-	width: calc(100% - 514px);
+	
 	height: 100vh;
 }
 
