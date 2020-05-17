@@ -21,10 +21,192 @@ body {
 	color: #865C6C;
 }
 
+.sidebar-content {
+	height: 100vh;
+	width: initial;
+}
+
+header {
+	display: block;
+	text-align: left;
+	padding-top: 64px;
+	padding-left: 64px;
+	padding-bottom: 30px;
+	padding-right: 64px;
+}
+
+header .logo {
+	opacity: 0.7;
+	display: block;
+	margin-bottom: 31px;
+
+}
+
+.sidebar a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.dribbble-logo {
+	color: #865C6C;
+	fill: currentColor;
+	width: 90px;
+	height: auto;	
+}
+
+.sidebar h1 {
+	font-family: inherit;
+	display: block;
+	font-size: 35px;
+    line-height: 38px;
+	font-weight: bold;
+	font-style: normal;
+	margin-bottom: 0px;
+}
+
+.artwork {
+	width: inherit;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	flex-grow: 1;
+}
+
+.artwork-image {
+	background-image: url('/static/images/art.png');
+	object-fit: cover;
+	height: 557.5px;
+	max-height: 590.5px;
+	background-position: bottom center;
+    background-size: cover;
+	
+}
+
+.artwork-attribution {
+	color: inherit;
+	font-size: 14px;
+	line-height: 14px;
+	padding-top: 25px;
+	padding-left: 64px;
+	padding-bottom: 35px;
+	padding-right: 64px;
+}
+
+p {
+	font-family: inherit;
+	display: block;
+	margin-bottom: 0px;
+}
+
+.content {
+	float: left;
+	width: calc(100% - 514px);
+	height: 100vh;
+}
+
+.content p {
+	font-size: 14px;
+	float: left;
+	display: block;
+}
+
+.nav{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-grow: 0;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-bottom: 0px;
+	padding-right: 30px;
+	position: relative;
+}
+.nav .link{
+	text-align: right;
+	flex-grow: 0;
+	margin: 0px;
+
+}
+
+main {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.auth-content {
+	width: 100%;
+	max-width: 536px;
+	font-size: 10px;
+	display: block;
+	padding-top: 30px;
+	padding-left: 60px;
+	padding-bottom: 0px;
+	padding-right: 60px;
+}
+
+.auth-content h2 { 
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	margin-bottom: 26px;
+}
+
+.auth-connection {
+	margin: 0 0 40px;
+    display: flex;
+}
+
+.auth-connection a .auth-google {
+	flex-grow: 1;
+	position: relative;
+	background-color: #4285f4;
+
+}
+
+.auth-connection a .auth-twitter{
+	flex-grow: 1;
+	position: relative;
+}
+
+.form-btn{
+	height: 40px;
+	display: inline-block;
+	border: none;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	padding-top: 10px;
+	padding-left: 16px;
+	padding-bottom: 10px;
+	padding-right: 16px;
+	background-color: #f3f3f4;
+}
+
+a.form-btn svg {
+	background-color: #f3f3f4;
+    fill: currentColor;
+    height: 13px;
+    width: 13px;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 2px;
+}
+
 @media (max-width: 959px){
 	.sidebar {
 		display: none;
-	}	
+	}
+	.content {
+		width: 100%;
+	}
+
 }
 
 @media (min-width: 960px) and (max-width: 961px){
@@ -77,108 +259,15 @@ body {
 	}
 }
 
-.sidebar-content {
-	height: 100%;
-	width: initial;
-}
 
-header {
-	display: block;
-	text-align: left;
-	padding-top: 64px;
-	padding-left: 64px;
-	padding-bottom: 30px;
-	padding-right: 64px;
-}
 
-header .logo {
-	opacity: 0.7;
-	display: block;
-	margin-bottom: 31px;
 
-}
 
-.sidebar a {
-	color: inherit;
-	text-decoration: underline;
-}
+/*.auth-google {
+	background-color: #2A75F3;
+}*/
 
-.dribbble-logo {
-	color: #865C6C;
-	fill: currentColor;
-	width: 90px;
-	height: auto;	
-}
 
-.sidebar h1 {
-	font-family: inherit;
-	display: block;
-	font-size: 35px;
-    line-height: 38px;
-	font-weight: bold;
-	font-style: normal;
-	margin-bottom: 0px;
-}
 
-.artwork {
-	width: inherit;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	flex-grow: 1;
-}
 
-.artwork-image {
-	background-image: url('/static/images/art.png');
-	height: 557.5px;
-	max-height: 590.5px;
-	background-position: bottom center;
-    background-size: cover;
-	
-}
-
-.artwork-attribution {
-	color: inherit;
-	font-size: 14px;
-	line-height: 14px;
-	padding-top: 25px;
-	padding-left: 64px;
-	padding-bottom: 35px;
-	padding-right: 64px;
-}
-
-p {
-	font-family: inherit;
-	display: block;
-	margin-bottom: 0px;
-}
-
-.content {
-	float: left;
-	
-	height: 100vh;
-}
-
-.content p {
-	font-size: initial;
-	float: left;
-	display: block;
-}
-
-.nav{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	flex-grow: 0;
-	padding-top: 30px;
-	padding-left: 30px;
-	padding-bottom: 0px;
-	padding-right: 30px;
-	position: relative;
-}
-.nav .link{
-	text-align: right;
-	flex-grow: 0;
-	margin: 0px;
-
-}
+/* https://bmr-poc.beyaz.net/novnc/?host=bmr-poc.beyaz.net&port=6080&encrypt=1&password=bmr123vnc */
