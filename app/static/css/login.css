@@ -137,29 +137,24 @@ main {
 }
 
 .auth-content {
-	width: 100%;
-	max-width: 536px;
-	font-size: 10px;
-	display: block;
-	padding-top: 30px;
-	padding-left: 60px;
-	padding-bottom: 0px;
-	padding-right: 60px;
+		
+	
 }
 
 .auth-content h2 { 
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 29px;
+	text-align: center;
 	margin-bottom: 26px;
 }
 
 .auth-connection {
-	margin: 0 0 40px;
     display: flex;
 }
 
 .auth-connection a .auth-google {
+	width: 100%;
 	flex-grow: 1;
 	position: relative;
 	background-color: #4285f4;
@@ -167,11 +162,13 @@ main {
 }
 
 .auth-connection a .auth-twitter{
+	
+	margin-right: 0;
 	flex-grow: 1;
 	position: relative;
 }
 
-.form-btn{
+/*.form-btn{
 	height: 40px;
 	display: inline-block;
 	border: none;
@@ -187,13 +184,12 @@ main {
 	padding-bottom: 10px;
 	padding-right: 16px;
 	background-color: #f3f3f4;
-}
+}*/
 
 a.form-btn svg {
 	background-color: #f3f3f4;
     fill: currentColor;
     height: 13px;
-    width: 13px;
     vertical-align: middle;
     margin-top: -3px;
     margin-right: 2px;
